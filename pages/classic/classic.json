@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "bonc-like": "/components/like/index",
+    "bonc-movie": "/components/classic/movie/index",
+    "bonc-music": "/components/classic/music/index",
+    "bonc-essay": "/components/classic/essay/index",
+    "bonc-epoide": "/components/epsoide/index",
+    "bonc-navi": "/components/navi/index"
+  }
+}

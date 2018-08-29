@@ -1,0 +1,15 @@
+<!--pages/classic/classic.wxml-->
+<view class='container'>
+  <view class='header'>
+    <bonc-epoide class='epsoide' index="{{classic.index}}" />
+    <bonc-like class='like' bind:like="onLike" like="{{likeStatus}}" count="{{likeCount}}" />
+  </view>
+  <bonc-movie hidden="{{ classic.type != 100 }}" img="{{classic.image}}" content="{{classic.content}}" />
+  <bonc-music wx:if="{{ classic.type == 200 }}"  img="{{classic.image}}" 
+    src="{{classic.url}}"  content="{{classic.content}}" />
+  <bonc-essay hidden="{{ classic.type != 300 }}" img="{{classic.image}}" content="{{classic.content}}" />
+
+  <bonc-navi class='navi' title='{{classic.title}}' first='{{first}}' latest='{{latest}}'
+    bind:left='onPrevious' bind:right='onNext'></bonc-navi>
+
+</view>

@@ -1,0 +1,39 @@
+/* pages/classic/classic.wxss */
+
+/* 在小程序中，view组件的宽度一般是100%，高度为自适应 */
+
+.container{
+  display: flex;
+  /*flex-direction常用取值：  row column row-reverse column-reverse */
+
+  /* 主轴 交叉轴的概念 */
+  /* flex-direction：指明的列即为主轴 */
+  flex-direction: row;
+  /* 主轴的对齐方式 */
+  justify-content: center;
+  /* 交叉轴的对齐方式 */
+  align-items: flex-start;
+  /* nowrap:水平方向平均分配 */
+  /* wrap：按照指定宽度换行 */
+  flex-wrap: wrap;
+
+  height: 200px;
+  background-color: #999999;
+}
+
+.chunk{
+  width: 150px;
+  height: 100px;
+}
+
+.color1{
+  background-color: brown
+}
+
+.color2{
+  background-color: aqua
+}
+
+.color3{
+  background-color: blue
+}
